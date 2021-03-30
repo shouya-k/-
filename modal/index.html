@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+  <body>
+    <div class="container" id="app">
+      <h1 class="container__title">ボタンを押すとモーダルが開きます。</h1>
+      <button class="container__btn" @click="showModal">表示</button>
+
+      <div v-show="modal.isShow" class="modal">
+        <div class="modal__inner">
+          <p class="modal__header">タイトル</p>
+          <div class="modal__body">
+            モーダルを表示しています。
+          </div>
+          <div class="modal__footer">
+            <button class="modal__btn" @click="hiddenModal">閉じる</button>
+          </div>
+        </div>
+        <div class="modal__bg" @click="hiddenModal"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
