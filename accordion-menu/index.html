@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+  <body>
+    <div id="app">
+      <accordion class="menu--red">
+        <h1 class="menu__title" slot="title">アコーディオン1</h1>
+        <div class="menu__content" slot="content">
+          <p class="menu__text">アコーデオン1の中身</p>
+          <p class="menu__text">アコーデオン1の中身</p>
+        </div>
+      </accordion>
+      <accordion class="menu--blue">
+        <h1 class="menu__title" slot="title">アコーディオン2</h1>
+        <div class="menu__content" slot="content">
+          <p class="menu__text">アコーデオン2の中身</p>
+          <p class="menu__text">アコーデオン2の中身</p>
+        </div>
+      </accordion>
+      <accordion class="menu--green">
+        <h1 class="menu__title" slot="title">アコーディオン3</h1>
+        <div class="menu__content" slot="content">
+          <p class="menu__text">アコーデオン3の中身</p>
+          <p class="menu__text">アコーデオン3の中身</p>
+        </div>
+      </accordion>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
