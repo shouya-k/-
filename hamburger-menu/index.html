@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hamburger menu</title>
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+  <body>
+    <header class="head" id="app">
+      <nav class="nav">
+        <div v-show="!nav.isShow" class="nav__icon" @click="showNav">
+          <i class="fas fa-bars fa-3x"></i>
+        </div>
+        <div v-show="nav.isShow" class="nav__inner">
+          <div class="nav__icon nav__icon--times">
+            <i class="fas fa-times fa-3x" @click="hiddenNav"></i>
+          </div>
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a class="nav__link" href="#">メニュー1</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">メニュー2</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">メニュー3</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">メニュー4</a>
+            </li>
+          </ul>
+        </div>
+        <div v-show="nav.isShow" class="nav__bg" @click="hiddenNav"></div>
+      </nav>
+    </header>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.nav__inner {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  right: 0;
+  background-color: black;
+  z-index: 5;
+}
+
+.nav__icon {
+  text-align: right;
+  margin: 10px;
+}
+
+.nav__icon--times {
+  color: #fff;
+}
+
+.nav__menu {
+  margin-left: auto;
+  list-style: none;
+  text-align: center;
+  z-index: 5;
+}
+
+.nav__item {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.nav__link {
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  background-color: gray;
+}
+
+.nav__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
