@@ -1,0 +1,51 @@
+.counter {
+  width: 300px;
+  margin: 80px auto 0;
+}
+
+.counter__display {
+  font-size: 40px;
+  padding: 35px;
+  text-align: center;
+  border: 3px solid #ccc;
+}
+
+.counter__buttons {
+  display: flex;
+  border: 3px solid #ccc;
+  border-top: none;
+}
+
+.counter__buttons button {
+  width: 150px;
+  font-size: 26px;
+  padding: 20px;
+  background-color: rgba(204, 204, 204, 0.5);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.counter__buttons button:first-child {
+  border-right: 3px solid #ccc;
+}
+
+.counter__buttons button:hover {
+  background-color: #ccc;
+}
+
+.counter__reset {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgba(204, 204, 204, 0.5);
+  border: 3px solid #ccc;
+  border-top: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.counter__reset:hover {
+  background-color: #ccc;
+}

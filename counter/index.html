@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+  <body>
+    <div class="counter" id="app">
+      <div class="counter__display">{{ count }}</div>
+      <div class="counter__buttons">
+        <button @click="decrement">-1</button>
+        <button @click="increment">+1</button>
+      </div>
+      <button class="counter__reset" @click="reset">リセット</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
