@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tab</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+  <body>
+    <div class="tab" id="app">
+      <h1 class="tab__title">タブ</h1>
+      <ul class="tab__menu">
+        <li
+          v-for="(item, index) in items"
+          :key="index"
+          class="tab__item"
+          :class="{ tab_active: active === index }"
+          @click="active = index"
+        >
+          {{ item }}
+        </li>
+      </ul>
+      <div class="tab__contents">
+        <div v-show="active === 0">
+          <p class="tab__text">
+            タブ1を表示しています。
+          </p>
+        </div>
+        <div v-show="active === 1">
+          <p class="tab__text">
+            タブ2を表示しています。
+          </p>
+        </div>
+        <div v-show="active === 2">
+          <p class="tab__text">
+            タブ3を表示しています。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
